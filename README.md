@@ -8,11 +8,10 @@ Description: Medical data on Pima Indian women used to predict diabetes based on
 License: Public Domain
 
 ## Project structure
-•	analysis.py
-•	project.ipynb
-•	project_clean.ipynb
-•	project.csv
-•	project_clean.csv
+•	diabetes.csv
+•	diabetes.ipynb
+•	diabetes.py
+•	diabets_clean.csv
 
 ## Project Goals
 •	Data cleaning
