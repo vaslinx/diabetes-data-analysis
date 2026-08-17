@@ -1,6 +1,7 @@
 # Diabetes Data Analysis
 ## About project
 This project demonstrates data cleaning, feature engineering, visualization, and basic machine learning analysis using a diabetes medical dataset.
+
 ## Dataset
 Source: [Pima Indians Diabetes Dataset](https://archive.ics.uci.edu/dataset/34/diabetes)
 Publisher: UCI Machine Learning Repository
@@ -8,18 +9,18 @@ Description: Medical data on Pima Indian women used to predict diabetes based on
 License: Public Domain
 
 ## Project structure
-•	diabetes.csv
-•	diabetes.ipynb
-•	diabetes.py
-•	diabets_clean.csv
+* diabetes.csv
+* diabetes.ipynb
+* diabetes.py
+* diabets_clean.csv
 
 ## Project Goals
-•	Data cleaning
-•	Identifying factors associated with diabetes
-•	Finding relationships between health indicators
-•	Building visualizations (histograms, boxplots, heatmaps)
-•	Correlation analysis
-•	Machine learning analysis
+* Data cleaning
+* Identifying factors associated with diabetes
+* Finding relationships between health indicators
+* Building visualizations (histograms, boxplots, heatmaps)
+* Correlation analysis
+* Machine learning analysis
 
 ## Key Findings
 
@@ -37,24 +38,24 @@ Feature Importance (RandomForest) BMI (0.19) and Glucose (0.15) are the most imp
 The analysis shows that BMI (r = 0.26) and Glucose (r = 0.19) have the strongest association with diabetes — confirmed by both the correlation heatmap and the RandomForest model. Other variables show no dominant predictive power and have similar low importance scores. Age shows a weak tendency — diabetes is more common after 50, but differences between age groups are minor. In all age groups, diabetic cases significantly outnumber non-diabetic ones, indicating a dataset imbalance that limits the generalizability of conclusions.
 
 ## Limitations:
-•	The dataset is imbalanced — 506 diabetic cases vs 262 non-diabetic (~2:1), which may bias model predictions toward the diabetic group 
-•	The dataset includes only Pima Indian women — results cannot be generalized to other ethnicities or males 
-•	Zero values in key columns (Glucose, BMI, Insulin) were replaced with median — this may distort the real distribution 
-•	BMI does not account for muscle mass or body composition 
-•	No data on diet, physical activity, or medication use 
-•	RandomForest was used without hyperparameter tuning — model performance could be improved
+* The dataset is imbalanced — 506 diabetic cases vs 262 non-diabetic (~2:1), which may bias model predictions toward the diabetic group
+* The dataset includes only Pima Indian women — results cannot be generalized to other ethnicities or males
+* Zero values in key columns (Glucose, BMI, Insulin) were replaced with median — this may distort the real distribution
+* BMI does not account for muscle mass or body composition
+* No data on diet, physical activity, or medication use
+* RandomForest was used without hyperparameter tuning — model performance could be improved
 
 ## Next Steps
-•	Train and evaluate the RandomForest model properly using train/test split and accuracy metrics
-•	Address dataset imbalance using oversampling techniques (e.g. SMOTE)
-•	Add statistical testing (t-test) to verify differences between diabetic and non-diabetic groups
-•	Try other classification models (Logistic Regression, XGBoost) and compare performance
+* Train and evaluate the RandomForest model properly using train/test split and accuracy metrics
+* Address dataset imbalance using oversampling techniques (e.g. SMOTE)
+* Add statistical testing (t-test) to verify differences between diabetic and non-diabetic groups
+* Try other classification models (Logistic Regression, XGBoost) and compare performance
 
 ## How to Run
-•	Clone the repository
-•	Install dependencies:
-•	pip install pandas seaborn matplotlib scikit-learn
-•	Open project.ipynb in Jupyter Notebook and run all cells
+1. Clone the repository
+2. Install dependencies:
+3. pip install pandas seaborn matplotlib scikit-learn
+4. Open project.ipynb in Jupyter Notebook and run all cells
 
 ## Technologies
 ![Python](https://img.shields.io/badge/Python-blue)
