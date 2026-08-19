@@ -23,16 +23,21 @@ License: Public Domain
 * Machine learning analysis
 
 ## Key Findings
-
+**Correlation Heatmap of Numeric Features**:
 Correlation Heatmap BMI (r = 0.26) and Glucose (r = 0.19) show the strongest correlation with diabetes outcome. All other variables have near-zero correlations and are not significant predictors in this dataset.
 
+**Distribution of Glucose by Outcome**:
 Distribution Plots Glucose is the clearest separator between groups — diabetic patients peak at significantly higher values (~140-150 vs ~80-90). BMI also differs noticeably, with diabetic patients showing higher values (~35-40 vs ~25-27). Age reveals a weak tendency — diabetes is more common after age 50, but the curves overlap heavily. Blood pressure shows almost no separation between groups and is the weakest predictor among the four variables.
 
-Glucose Levels by Age Group (Boxplot) Median glucose levels are similar across all age groups (~120-125). The widest spread is observed in senior (61-80) and young (18-40) groups, suggesting high variability in glucose levels within these age categories.
 
-Diabetes Distribution by Age Group (Countplot) In all age groups, the number of diabetic patients exceeds non-diabetic cases. The largest gap is in the 18-40 (~180 vs ~95) and 61-80 (~165 vs ~85) groups, confirming the dataset imbalance.
+**Glucose Levels by Age Group (Boxplot)**:
+Median glucose levels are similar across all age groups (~120-125). The widest spread is observed in senior (61-80) and young (18-40) groups, suggesting high variability in glucose levels within these age categories.
 
-Feature Importance (RandomForest) BMI (0.19) and Glucose (0.15) are the most important features for predicting diabetes. The remaining variables — blood pressure, insulin, skin thickness, age — show similar importance (~0.11-0.12), suggesting no single dominant predictor among them. This is consistent with the correlation heatmap findings.
+**Diabetes Distribution by Age Group (Countplot)**:
+In all age groups, the number of diabetic patients exceeds non-diabetic cases. The largest gap is in the 18-40 (~180 vs ~95) and 61-80 (~165 vs ~85) groups, confirming the dataset imbalance.
+
+**Feature Importance (RandomForest)**:
+BMI (0.19) and Glucose (0.15) are the most important features for predicting diabetes. The remaining variables — blood pressure, insulin, skin thickness, age — show similar importance (~0.11-0.12), suggesting no single dominant predictor among them. This is consistent with the correlation heatmap findings.
 
 ## Conclusions
 The analysis shows that BMI (r = 0.26) and Glucose (r = 0.19) have the strongest association with diabetes — confirmed by both the correlation heatmap and the RandomForest model. Other variables show no dominant predictive power and have similar low importance scores. Age shows a weak tendency — diabetes is more common after 50, but differences between age groups are minor. In all age groups, diabetic cases significantly outnumber non-diabetic ones, indicating a dataset imbalance that limits the generalizability of conclusions.
