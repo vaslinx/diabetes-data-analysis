@@ -3,10 +3,10 @@
 This project demonstrates data cleaning, feature engineering, visualization, and basic machine learning analysis using a diabetes medical dataset.
 
 ## Dataset
-**Source**: [Pima Indians Diabetes Dataset](https://archive.ics.uci.edu/dataset/34/diabetes)
-**Publisher**: UCI Machine Learning Repository
-**Description**: Medical data on Pima Indian women used to predict diabetes based on health measurements
-**License**: Public Domain
+* **Source**: [Pima Indians Diabetes Dataset](https://archive.ics.uci.edu/dataset/34/diabetes)
+* **Publisher**: UCI Machine Learning Repository
+* **Description**: Medical data on Pima Indian women used to predict diabetes based on health measurements
+* **License**: Public Domain
 
 ## Project structure
 * diabetes.csv
